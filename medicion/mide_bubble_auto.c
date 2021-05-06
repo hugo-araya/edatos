@@ -25,29 +25,35 @@ void muestra_datos(int *array, int n);
 int main(){
     time_t t_1,t_2;
     int array[1000000], N, i, j, aux;
-    printf("Cuantos datos: ");
-    scanf("%d", &N);
-    lee_datos(array, N);
+//    printf("Cuantos datos: ");
+//    scanf("%d", &N);
+    FILE *sal;
+    sal = fopen("salida.txt", "wt");
+    lee_datos(array, 400000);
+    for (N = 20000; N <= 200000; N = N + 10000){
+ //       lee_datos(array, N);
 //    muestra_datos(array, N);
 
-    t_1=time(NULL);
-    // Bloque a medir el tiempo
-    for(i=0;i<N-1;i++){   
-	    for(j=0;j<N-i-1;j++){ 
-	        if(array[j+1]<array[j]){       
-		    aux=array[j+1];       
-		    array[j+1]=array[j];  
-		    array[j]=aux;
-	        }   
-	    } 
-    } 
-    t_2=time(NULL);
-
-    printf("\n\nEstadistica del programa: Ordenamiento Bubble Sort ");   
-    printf("\n\nCantidad de datos = %d",N);
-    printf("\nTiempo 1 = %ld",t_1);
-    printf("\nTiempo 2 = %ld",t_2);
-    printf("\n\nTiempo Total = %lf\n\n",difftime(t_2,t_1));
+        t_1=time(NULL);
+        // Bloque a medir el tiempo
+        for(i=0;i<N-1;i++){   
+	        for(j=0;j<N-i-1;j++){ 
+	            if(array[j+1]<array[j]){       
+		        aux=array[j+1];       
+		        array[j+1]=array[j];  
+		        array[j]=aux;
+	            }   
+	        } 
+        } 
+        t_2=time(NULL);
+        printf("N: %d\n", N);
+        fprintf(sal,"\nEstadistica del programa: Ordenamiento Bubble Sort ");   
+        fprintf(sal,"\nCantidad de datos = %d",N);
+        fprintf(sal,"\nTiempo 1 = %ld",t_1);
+        fprintf(sal,"\nTiempo 2 = %ld",t_2);
+        fprintf(sal,"\nTiempo Total = %lf\n",difftime(t_2,t_1));
+     }
+     fclose(sal);
     return 0;
 }
 

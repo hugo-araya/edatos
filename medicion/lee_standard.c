@@ -14,7 +14,7 @@
 
 int main(){
     int numero,i,dato; 
-    numero = 10;
+    numero = 1000;
     for (i=0; i < numero; i++){
         scanf("%d", &dato);
         printf("leido : %d\n", dato);

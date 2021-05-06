@@ -20,7 +20,7 @@ int main(){
     FILE *ent;
     int numero,i; 
     srand(time(0));
-    ent = fopen("datos_a.txt", "wt");
+    ent = fopen("datos_a1.txt", "wt");
     numero = 1000000; 
     for (i=0; i< numero; i++){
         fprintf(ent,"%d\n",rand()%100000); 

@@ -1,0 +1,114 @@
+
+Estadistica del programa: Ordenamiento Bubble Sort 
+Cantidad de datos = 20000
+Tiempo 1 = 1620320334
+Tiempo 2 = 1620320335
+Tiempo Total = 1.000000
+
+Estadistica del programa: Ordenamiento Bubble Sort 
+Cantidad de datos = 30000
+Tiempo 1 = 1620320335
+Tiempo 2 = 1620320336
+Tiempo Total = 1.000000
+
+Estadistica del programa: Ordenamiento Bubble Sort 
+Cantidad de datos = 40000
+Tiempo 1 = 1620320336
+Tiempo 2 = 1620320338
+Tiempo Total = 2.000000
+
+Estadistica del programa: Ordenamiento Bubble Sort 
+Cantidad de datos = 50000
+Tiempo 1 = 1620320338
+Tiempo 2 = 1620320341
+Tiempo Total = 3.000000
+
+Estadistica del programa: Ordenamiento Bubble Sort 
+Cantidad de datos = 60000
+Tiempo 1 = 1620320341
+Tiempo 2 = 1620320346
+Tiempo Total = 5.000000
+
+Estadistica del programa: Ordenamiento Bubble Sort 
+Cantidad de datos = 70000
+Tiempo 1 = 1620320346
+Tiempo 2 = 1620320352
+Tiempo Total = 6.000000
+
+Estadistica del programa: Ordenamiento Bubble Sort 
+Cantidad de datos = 80000
+Tiempo 1 = 1620320352
+Tiempo 2 = 1620320360
+Tiempo Total = 8.000000
+
+Estadistica del programa: Ordenamiento Bubble Sort 
+Cantidad de datos = 90000
+Tiempo 1 = 1620320360
+Tiempo 2 = 1620320371
+Tiempo Total = 11.000000
+
+Estadistica del programa: Ordenamiento Bubble Sort 
+Cantidad de datos = 100000
+Tiempo 1 = 1620320371
+Tiempo 2 = 1620320383
+Tiempo Total = 12.000000
+
+Estadistica del programa: Ordenamiento Bubble Sort 
+Cantidad de datos = 110000
+Tiempo 1 = 1620320383
+Tiempo 2 = 1620320398
+Tiempo Total = 15.000000
+
+Estadistica del programa: Ordenamiento Bubble Sort 
+Cantidad de datos = 120000
+Tiempo 1 = 1620320398
+Tiempo 2 = 1620320416
+Tiempo Total = 18.000000
+
+Estadistica del programa: Ordenamiento Bubble Sort 
+Cantidad de datos = 130000
+Tiempo 1 = 1620320416
+Tiempo 2 = 1620320438
+Tiempo Total = 22.000000
+
+Estadistica del programa: Ordenamiento Bubble Sort 
+Cantidad de datos = 140000
+Tiempo 1 = 1620320438
+Tiempo 2 = 1620320462
+Tiempo Total = 24.000000
+
+Estadistica del programa: Ordenamiento Bubble Sort 
+Cantidad de datos = 150000
+Tiempo 1 = 1620320462
+Tiempo 2 = 1620320490
+Tiempo Total = 28.000000
+
+Estadistica del programa: Ordenamiento Bubble Sort 
+Cantidad de datos = 160000
+Tiempo 1 = 1620320490
+Tiempo 2 = 1620320521
+Tiempo Total = 31.000000
+
+Estadistica del programa: Ordenamiento Bubble Sort 
+Cantidad de datos = 170000
+Tiempo 1 = 1620320521
+Tiempo 2 = 1620320557
+Tiempo Total = 36.000000
+
+Estadistica del programa: Ordenamiento Bubble Sort 
+Cantidad de datos = 180000
+Tiempo 1 = 1620320557
+Tiempo 2 = 1620320597
+Tiempo Total = 40.000000
+
+Estadistica del programa: Ordenamiento Bubble Sort 
+Cantidad de datos = 190000
+Tiempo 1 = 1620320597
+Tiempo 2 = 1620320640
+Tiempo Total = 43.000000
+
+Estadistica del programa: Ordenamiento Bubble Sort 
+Cantidad de datos = 200000
+Tiempo 1 = 1620320640
+Tiempo 2 = 1620320688
+Tiempo Total = 48.000000
