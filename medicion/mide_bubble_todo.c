@@ -30,7 +30,7 @@ int main(){
     int desde, hasta, incremento, N;
     int resul_inv, resul_ord, resul_ale;
     FILE *sal;
-    sal = fopen("salida_04.csv", "wt");
+    sal = fopen("salida_S2_02.csv", "wt");
     fclose(sal);
     printf("Desde: ");
     scanf("%d", &desde);
@@ -58,7 +58,7 @@ int main(){
         t_2 = time(NULL);
         resul_ale = (int)difftime(t_2,t_1);
 
-        sal = fopen("resumen_todos.csv", "at");
+        sal = fopen("salida_S2_02.csv", "at");
         fprintf(sal,"%d,%d,%d,%d\n", N, resul_inv, resul_ord, resul_ale);
         fclose(sal);
      }
