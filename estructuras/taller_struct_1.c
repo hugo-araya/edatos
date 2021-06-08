@@ -1,35 +1,29 @@
 #include <stdio.h>
 #define N 3
 
-struct estudiante {
+typedef struct{
     int matricula;
     int nombre;
     int edad;
     int fono;
     int nota;
-};
+} ESTUDIANTE;
 
 int main(){
-    struct estudiante alum[N];
+    ESTUDIANTE alum[N];
     int i;
     int matricula, nombre, edad, fono, nota;
     for (i = 0 ; i < N; i++){
         printf("Matricula: ");
-        scanf("%d",&matricula);
+        scanf("%d",&alum[i].matricula);
         printf("Nombre: ");
-        scanf("%d",&nombre);
+        scanf("%d",&alum[i].nombre);
         printf("Edad: ");
-        scanf("%d",&edad);
+        scanf("%d",&alum[i].edad);
         printf("Fono: ");
-        scanf("%d",&fono);
+        scanf("%d",&alum[i].fono);
         printf("Nota: ");
-        scanf("%d",&nota);
-
-        alum[i].matricula = matricula;
-        alum[i].nombre = nombre;
-        alum[i].edad = edad;
-        alum[i].fono = fono;
-        alum[i].nota = nota;
+        scanf("%d",&alum[i].nota);
     }
 
     for (i = 0 ; i < N; i++){

@@ -15,7 +15,7 @@ int main(){
 }
 
 void definir_hoy(struct fecha *h){
-    h->dia = 7;
+    h->dia = 8;
     h->mes = 6;
     h->agno = 2021;
 }

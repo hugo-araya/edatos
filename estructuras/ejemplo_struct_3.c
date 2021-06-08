@@ -3,20 +3,20 @@ typedef struct {
     int dia;
     int mes;
     int agno;
-} fecha;
+} FECHA;
 
-fecha definir_hoy();
+FECHA definir_hoy();
 
 int main(){
-    fecha hoy;
+    FECHA hoy;
     hoy = definir_hoy();
     printf("%d - %d - %d\n", hoy.dia, hoy.mes, hoy.agno);
     return 0;
 }
 
-fecha definir_hoy(){
-    fecha h;
-    h.dia = 7;
+FECHA definir_hoy(){
+    FECHA h;
+    h.dia = 8;
     h.mes = 6;
     h.agno = 2021;
     return h;
