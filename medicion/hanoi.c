@@ -4,8 +4,8 @@ void hanoi(int n,int com, int aux, int fin, int van);
 
 int main(){
     int van = 1;
-    hanoi(30, 1, 2, 3, van);
-    printf("n\nLlamada: %d - %d\n\n\n", llamadas, van);
+    hanoi(20, 1, 2, 3, van);
+    printf("\n\nLlamada: %d - %d\n\n\n", llamadas, van);
     return 0;
 }
 

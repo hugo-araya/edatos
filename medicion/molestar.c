@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-int llamadas = 1;
+int llamadas = 1; // Variables Globales
 
 void imprimir();
 
