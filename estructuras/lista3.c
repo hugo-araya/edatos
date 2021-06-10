@@ -14,11 +14,15 @@ int main(){
     for (i = 4; i >= 1; i--){
         /* Reserva memoria para un nodo */
         p = (struct lista *) malloc(sizeof(struct lista));
+        if (L == NULL){
+            L = p;
+        }
         printf("Ingrese valor: ");
         scanf("%d", &dato);
         p->clave = dato;
-        p->sig = L;
-        L = p;
+        p->sig = NULL;
+        L->sig = p;
+        //L = p;
     }
     p = L;
     suma = 0;

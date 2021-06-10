@@ -16,7 +16,7 @@ int main(){
 
 struct fecha definir_hoy(){
     struct fecha h;
-    h.dia = 9;
+    h.dia = 10;
     h.mes = 6;
     h.agno = 2021;
     return h;

@@ -12,7 +12,6 @@ typedef struct{
 int main(){
     ESTUDIANTE alum[N];
     int i;
-    int matricula, nombre, edad, fono, nota;
     for (i = 0 ; i < N; i++){
         printf("Matricula: ");
         scanf("%d",&alum[i].matricula);
