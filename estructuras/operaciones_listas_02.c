@@ -9,6 +9,7 @@ struct lista {
 void mostrar (struct lista *L);
 struct lista * elimina_inicio(struct lista *L);
 int contar_nodos(struct lista *L);
+int esta_vacia(struct lista *L);
 
 int main(){
     struct lista *L;
@@ -22,14 +23,86 @@ int main(){
         p->sig = L;
         L = p;
     }
-    mostrar(L);
+
+    if (esta_vacia(L) == 1){
+        mostrar(L);
+    }
+    else{
+        printf("La Lista esta Vacia\n");
+    }
+
     printf("Son: %d\n", contar_nodos(L));
-    L = elimina_inicio(L);
-    mostrar(L);
+
+    if (esta_vacia(L) == 1){
+        L = elimina_inicio(L);
+    }
+    else{
+        printf("No se puede eliminar porque la lista esta vacia\n");
+    }
+
+    if (esta_vacia(L) == 1){
+        mostrar(L);
+    }
+    else{
+        printf("La Lista esta Vacia\n");
+    }
+
     printf("Son: %d\n", contar_nodos(L));
-    L = elimina_inicio(L);
-    mostrar(L);
+
+    if (esta_vacia(L) == 1){
+        L = elimina_inicio(L);        
+    }
+    else{
+        printf("No se puede eliminar porque la lista esta vacia\n");
+    }
+
+    if (esta_vacia(L) == 1){
+        mostrar(L);
+    }
+    else{
+        printf("La Lista esta Vacia\n");
+    }
+
     printf("Son: %d\n", contar_nodos(L));
+
+    if (esta_vacia(L) == 1){
+        L = elimina_inicio(L);        
+    }
+    else{
+        printf("No se puede eliminar porque la lista esta vacia\n");
+    }
+
+    if (esta_vacia(L) == 1){
+        mostrar(L);
+    }
+    else{
+        printf("La Lista esta Vacia\n");
+    }
+
+    printf("Son: %d\n", contar_nodos(L));
+
+    if (esta_vacia(L) == 1){
+        L = elimina_inicio(L);        
+    }
+    else{
+        printf("No se puede eliminar porque la lista esta vacia");
+    }
+
+    if (esta_vacia(L) == 1){
+        mostrar(L);
+    }
+    else{
+        printf("La Lista esta Vacia\n");
+    }
+
+    printf("Son: %d\n", contar_nodos(L));
+
+    if (esta_vacia(L) == 1){
+        L = elimina_inicio(L);        
+    }
+    else{
+        printf("No se puede eliminar porque la lista esta vacia\n");
+    }
     return 0;
 }
 
@@ -54,4 +127,13 @@ int contar_nodos(struct lista *p){
         p = p->sig;
     }
     return contador;
+}
+
+int esta_vacia(struct lista *L){
+    if (L == NULL) {
+        return 0;
+    }
+    else{
+        return 1;
+    }
 }
