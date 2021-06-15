@@ -7,7 +7,7 @@ struct lista {
 };
 
 void mostrar (struct lista *L);
-struct lista elimina_inicio(struct lista *L);
+struct lista * elimina_inicio(struct lista *L);
 int contar_nodos(struct lista *L);
 
 int main(){
@@ -24,10 +24,10 @@ int main(){
     }
     mostrar(L);
     printf("Son: %d\n", contar_nodos(L));
-    *L = elimina_inicio(L);
+    L = elimina_inicio(L);
     mostrar(L);
     printf("Son: %d\n", contar_nodos(L));
-    *L = elimina_inicio(L);
+    L = elimina_inicio(L);
     mostrar(L);
     printf("Son: %d\n", contar_nodos(L));
     return 0;
@@ -41,11 +41,10 @@ void mostrar (struct lista *p){
     printf("\n");
 }
 
-struct lista elimina_inicio(struct lista *L){
-    struct lista *p;
-    p = L;
+struct lista * elimina_inicio(struct lista *L){
+    struct lista *p = L;
     free(p);
-    return *L->sig;
+    return L->sig;
 }
 
 int contar_nodos(struct lista *p){

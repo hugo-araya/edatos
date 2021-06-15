@@ -18,5 +18,12 @@ int main(){
         p->sig = L;
         L = p;
     }
+
+    p = L;
+    while  (p != NULL){
+        printf("%d - ", p->clave);
+        p = p->sig;
+    }
+    printf("\n");
     return 0;
 }
