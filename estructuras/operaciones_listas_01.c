@@ -30,6 +30,15 @@ int main(){
     L = elimina_inicio(L);
     mostrar(L);
     printf("Son: %d\n", contar_nodos(L));
+    L = elimina_inicio(L);
+    mostrar(L);
+    printf("Son: %d\n", contar_nodos(L));
+    L = elimina_inicio(L);
+    mostrar(L);
+    printf("Son: %d\n", contar_nodos(L));
+    L = elimina_inicio(L);
+    mostrar(L);
+    printf("Son: %d\n", contar_nodos(L));
     return 0;
 }
 
