@@ -19,7 +19,7 @@ struct lista * agrega_final(struct lista *L);
 int main(){
     struct lista *L;
     struct lista *p;
-    int i, suma, elem, opcion=0;
+    int i, suma, elem, cont, opcion=0;
     mostrar_menu();
     while (opcion != 8){
         scanf("%d", &opcion);
@@ -38,7 +38,8 @@ int main(){
                     break;
             case 6: mostrar(L);
                     break;
-            case 7: contar_nodos(L);
+            case 7: cont = contar_nodos(L);
+                    printf("Hay %d nodos en la lista.\n", cont);
         }
         mostrar_menu();
     }
@@ -46,11 +47,12 @@ int main(){
 }
 
 void mostrar (struct lista *p){
+    printf("\n\n");
     while (p != NULL) {
         printf("%d, ", p->clave);
         p = p->sig;
     }
-    printf("\n");
+    printf("\n\n\n");
 }
 
 struct lista * elimina_inicio(struct lista *L){

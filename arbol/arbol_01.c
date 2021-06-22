@@ -48,9 +48,12 @@ int main(){
     l->elem='l'; l->izq=NULL; l->der=NULL;
 
     raiz=h;
-    printf("\nPreorden "); preorden(raiz);
-    printf("\nInorden "); inorden(raiz);
-    printf("\nPostorden "); postorden(raiz);
+    printf("\nPreorden ");
+    preorden(raiz);
+    printf("\nInorden ");
+    inorden(raiz);
+    printf("\nPostorden ");
+    postorden(raiz);
     printf("\n\n<< Finalizado >>\n\n");
     return 0;
 }
